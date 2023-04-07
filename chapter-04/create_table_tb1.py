@@ -9,7 +9,7 @@ mydb = MySQLdb.connect(host=CONFIG_DB_HOST, port=CONFIG_DB_PORT,
 
 cursor = mydb.cursor()
 sqlstr = """
-CREATE TABLE tb1 (empid VARCHAR(10),name VARCHAR(10),age INT);
+CREATE TABLE tb1 (empid VARCHAR(10),name VARCHAR(10),age INT) CHARSET=utf8
 """
 cursor.execute(sqlstr)
 cursor.close()
