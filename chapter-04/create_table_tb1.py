@@ -5,7 +5,7 @@ from db_config import *
 
 mydb = MySQLdb.connect(host=CONFIG_DB_HOST, port=CONFIG_DB_PORT,
                         user=CONFIG_DB_USER, password=CONFIG_DB_PASSWD,
-                        database=CONFIG_DB_NAME)
+                        database=CONFIG_DB_NAME, charset='utf8')
 
 cursor = mydb.cursor()
 sqlstr = """
