@@ -1,1 +1,0 @@
-mysql db1 -uroot -proot -e "SELECT * INTO OUTFILE 'C:/data/out2.csv' FIELDS TERMINATED BY ',' FROM tb1"
